@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Coins</h1>
-
+<center>
 <table>
   <thead>
     <tr>
@@ -14,17 +14,39 @@
 
   <tbody>
     <% @coins.each do |coin| %>
-      <tr>
-        <td><%= coin.description %></td>
-        <td><%= coin.acronym %></td>
-        <td> <%= image_tag coin.url_image, width: 30, height: 30 %> </td>
-        <td><%= link_to 'Show', coin %></td>
-        <td><%= link_to 'Edit', edit_coin_path(coin) %></td>
-        <td><%= link_to 'Destroy', coin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <tr> 
+        <td>
+          <center>
+            <%= link_to coin.description, coin %>
+          </center>
+        </td>
+
+        <td>
+          <center>
+            <%= coin.acronym %></td>
+          </center>
+        <td> 
+          <center>
+            <%= image_tag coin.url_image, width: 30, height: 30 %> 
+          </center>  
+        </td>
+
+        <td>
+          <center>
+            <%= link_to 'Editar', edit_coin_path(coin) %>
+          </center>
+        </td>
+
+        <td>
+          <center>
+            <%= link_to 'X', coin, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </center>  
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</center>
 
 <br>
 

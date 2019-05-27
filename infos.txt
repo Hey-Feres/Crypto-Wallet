@@ -3,7 +3,37 @@ Hash. A Hash is a dictionary-like collection of unique keys and their values. Al
 
 ***** Query Params *****
 Params that is send to the server throught the url.
+!!!!!!
 
 ***** Tasks *****
-lib > tasks > task_name
+path = lib > tasks > task_name
 Permite criar tasks para facilitar o desenvovlimento 
+
+***** RUBY MAP *****
+--Exemplos
+
+a = [1,2,3,4,5]
+a.map do |i|
+	i*2
+end
+///////// ou
+a.map { |i| i*2 }
+
+retorno sera de [2,4,6,8,10]
+
+--String
+c.map { |coin| coin.description}
+
+--Associativo
+c.map { |coin| [coin.description, coin.acronym]}
+
+--Simplificado
+c.map([&:description])
+
+--Usando Pluck
+c.pluck(:description, :acronym)
+
+***** CLI Commands *****
+rails dbconsole // Nos da acesso a um console excluiso do banco
+
+***** i18N *****
