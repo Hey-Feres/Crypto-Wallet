@@ -1,5 +1,15 @@
 {
   "name": "Crypto_Wallet",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "notifyjs": "^3.0.0",
+    "popper.js": "^1.15.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Hey-Feres/Crypto-Wallet.git",
+  "author": "Hey-Feres <brunoferesvillela@icloud.com>",
+  "license": "MIT"
 }

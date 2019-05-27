@@ -1,7 +1,5 @@
-h1 Be Welcome
-p= data_br(Date.today)
-ul
-  li= link_to "Cadastrar Moedas", coins_path
-  li= link_to "Cadastro de Mineração", mining_types_path
-h2= cookies[:curso]
-h2= session[:curso]   
+.jumbotron
+  h1 Be Welcome
+  p= data_br(Date.today)
+  = link_to "Moedas", coins_path, class: 'btn btn-info btn-sm mr2', role: 'button'
+  = link_to "Tipos de Mineração", mining_types_path, class: 'btn btn-info btn-sm', role: 'button'

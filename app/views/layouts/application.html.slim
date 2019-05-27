@@ -2,10 +2,24 @@ doctype html
 html
   head
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
-    title CryptoWallet
+    title Crypto Wallet
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    = yield
+  	.container-fluid
+  		ul.nav.justify-content-start
+  			li.nav-item
+  				= link_to "Wallet", root_path, class: 'nav-link'
+  			li.nav-item
+  				= link_to "Moedas", coins_path, class: 'nav-link'
+  			li.nav-item
+  				a.nav-link Cotação  
+  			li.nav-item
+  				a.nav-link News  								
+
+  		= yield
+	
+	/javascript:
+  		/$.notify("Bem Vindo :)", "success");
