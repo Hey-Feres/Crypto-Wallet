@@ -119,8 +119,9 @@ GEM
     msgpack (1.2.10)
     multipart-post (2.1.1)
     nio4r (2.3.1)
-    nokogiri (1.10.3)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
+    pg (1.1.4)
     public_suffix (3.0.3)
     puma (3.12.1)
     rack (2.0.7)
@@ -224,6 +225,7 @@ DEPENDENCIES
   iex-ruby-client
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  pg
   puma (~> 3.11)
   rails (~> 5.2.3)
   rails-i18n
